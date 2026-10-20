@@ -20,6 +20,7 @@
 // }
 
 
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 // void PrintStudentCard(string name, int age, string group)
@@ -32,42 +33,84 @@ using System.Runtime.InteropServices;
 
 
 
-//задание не сделано шаг3
-// double CalculateScholarship(double baseAmount, double bonusPercent)
+
+double CalculateScholarship(double baseAmount, double bonusPercent)
+{
+   return baseAmount + baseAmount * bonusPercent / 100;
+}
+bool IsEligibleForBonus(double averageGrade)
+{
+   return averageGrade >= 4.5;
+}
+double result = CalculateScholarship(2000, 15);
+Console.WriteLine(result);
+double studentGrade = 4.0;
+double CalculateScholarship2;
+
+if (IsEligibleForBonus(studentGrade))
+{
+   CalculateScholarship2 = CalculateScholarship(2000, 20);
+   Console.WriteLine($"С надбавкой: {CalculateScholarship2}");
+}
+else
+{
+   CalculateScholarship2 = CalculateScholarship(2000, 15);
+   Console.WriteLine($"Без надбавки: {CalculateScholarship2}");
+}
+
+
+
+
+// double CalculateAverageGrade(int[] grades)
 // {
-//    return baseAmount + baseAmount + bonusPercent / 100;
+//    int sum = 0;
+//    foreach (int grade in grades)
+//    {
+//       sum += grade;
+//    }
+//    return (double)sum / grades.Length;
 // }
-// double result = CalculateScholarship(2000, 15);
-// Console.WriteLine(result);
+// int countFives(int[] grades)
+// {
+//    int count = 0;
+//    foreach (int grade in grades)
+//    {
+//       if (grade == 5)
+//       {
+//          count++;
+//       }
+
+//    }
+//    return count;
+// }
+// int[] grades = { 4, 5, 3, 5, 4 };
+// double average = CalculateAverageGrade(grades);
+// Console.WriteLine(average);
+
+// int fives = countFives(grades);
+// Console.WriteLine(fives);
 
 
 
-double CalculateAverageGrade(int[] grades)
-{
-   int sum = 0;
-   foreach (int grade in grades)
-   {
-      sum += grade;
-   }
-   return (double)sum / grades.Length;
-}
-int countFives(int[] grades)
-{
-   int count = 0;
-   foreach (int grade in grades)
-   {
-      if (grade == 5)
-      {
-         count++;
-      }
+// class Program
+// {
+//    static void Main()
+//    {
+//       Console.WriteLine(Add(2, 3));
+//       Console.WriteLine(Add(2.5, 3.5));
+//       Console.WriteLine(Add(2, 3, 4));
+//    }
 
-   }
-   return count;
-}
-int[] grades = { 4, 5, 3, 5, 4 };
-double average = CalculateAverageGrade(grades);
-Console.WriteLine(average);
-
-int fives = countFives(grades);
-Console.WriteLine(fives);
-
+//    static int Add(int a, int b)
+//    {
+//       return a + b;
+//    }
+//    static double Add(double a, double b)
+//    {
+//       return a + b;
+//    }
+//    static int Add(int a, int b, int c)
+//    {
+//       return a + b + c;
+//    }
+// }
