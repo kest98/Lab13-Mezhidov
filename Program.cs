@@ -34,29 +34,29 @@ using System.Runtime.InteropServices;
 
 
 
-double CalculateScholarship(double baseAmount, double bonusPercent)
-{
-   return baseAmount + baseAmount * bonusPercent / 100;
-}
-bool IsEligibleForBonus(double averageGrade)
-{
-   return averageGrade >= 4.5;
-}
-double result = CalculateScholarship(2000, 15);
-Console.WriteLine(result);
-double studentGrade = 4.0;
-double CalculateScholarship2;
+// double CalculateScholarship(double baseAmount, double bonusPercent)
+// {
+//    return baseAmount + baseAmount * bonusPercent / 100;
+// }
+// bool IsEligibleForBonus(double averageGrade)
+// {
+//    return averageGrade >= 4.5;
+// }
+// double result = CalculateScholarship(2000, 15);
+// Console.WriteLine(result);
+// double studentGrade = 4.0;
+// double CalculateScholarship2;
 
-if (IsEligibleForBonus(studentGrade))
-{
-   CalculateScholarship2 = CalculateScholarship(2000, 20);
-   Console.WriteLine($"С надбавкой: {CalculateScholarship2}");
-}
-else
-{
-   CalculateScholarship2 = CalculateScholarship(2000, 15);
-   Console.WriteLine($"Без надбавки: {CalculateScholarship2}");
-}
+// if (IsEligibleForBonus(studentGrade))
+// {
+//    CalculateScholarship2 = CalculateScholarship(2000, 20);
+//    Console.WriteLine($"С надбавкой: {CalculateScholarship2}");
+// }
+// else
+// {
+//    CalculateScholarship2 = CalculateScholarship(2000, 15);
+//    Console.WriteLine($"Без надбавки: {CalculateScholarship2}");
+// }
 
 
 
@@ -114,3 +114,17 @@ else
 //       return a + b + c;
 //    }
 // }
+
+
+
+//Б
+void PrintPerson(string name, int age)
+{
+   Console.WriteLine($"Студент: {name}, возраст: {age}");
+
+}
+PrintPerson("Евгений", 20);
+PrintPerson("Максим", 19);
+
+
+//В
