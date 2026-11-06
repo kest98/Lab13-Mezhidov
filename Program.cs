@@ -20,8 +20,8 @@
 // }
 
 
-using System.ComponentModel;
-using System.Runtime.InteropServices;
+// using System.ComponentModel;
+// using System.Runtime.InteropServices;
 
 // void PrintStudentCard(string name, int age, string group)
 // {
@@ -118,13 +118,48 @@ using System.Runtime.InteropServices;
 
 
 //Б
-void PrintPerson(string name, int age)
-{
-   Console.WriteLine($"Студент: {name}, возраст: {age}");
+// void PrintPerson(string name, int age)
+// {
+//    Console.WriteLine($"Студент: {name}, возраст: {age}");
 
-}
-PrintPerson("Евгений", 20);
-PrintPerson("Максим", 19);
+// }
+// PrintPerson("Евгений", 20);
+// PrintPerson("Максим", 19);
 
 
 //В
+int N = int.Parse(Console.ReadLine());
+if (IsEven(N))
+{
+   Console.WriteLine("Число четное" + N){
+      else
+      {
+         Console.WriteLine("Число нечетное" + N);
+      }
+   }
+}
+bool IsEven(int number)
+{
+   return number % 2 == 0;
+}
+
+
+
+
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname))
+// {
+//    Console.WriteLine("Фамилия не введена. Завершение работы.");
+//    return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+
+//3
