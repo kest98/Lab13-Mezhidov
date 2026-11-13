@@ -128,20 +128,20 @@
 
 
 //В
-int N = int.Parse(Console.ReadLine());
-if (IsEven(N))
-{
-   Console.WriteLine("Число четное" + N){
-      else
-      {
-         Console.WriteLine("Число нечетное" + N);
-      }
-   }
-}
-bool IsEven(int number)
-{
-   return number % 2 == 0;
-}
+// int N = int.Parse(Console.ReadLine());
+// if (IsEven(N))
+// {
+//    Console.WriteLine("Число четное" + N){
+//       else
+//       {
+//          Console.WriteLine("Число нечетное" + N);
+//       }
+//    }
+// }
+// bool IsEven(int number)
+// {
+//    return number % 2 == 0;
+// }
 
 
 
@@ -163,3 +163,31 @@ bool IsEven(int number)
 
 
 //3
+
+bool IsPositive(int number)
+{
+    return number > 0;
+}
+
+Console.Write("Введите число: ");
+int a = int.Parse(Console.ReadLine());
+
+if (IsPositive(a))
+{
+    Console.WriteLine($"{a} положительное.");
+}
+else
+{
+    Console.WriteLine($"{a} не  положительное.");
+}
+
+
+//5
+// double CalculateBmi(double weight, double heightMeters)
+// {
+//     return weight / (heightMeters * heightMeters);
+// }
+
+// double bmi = CalculateBmi(75.5, 1.75);
+// Console.WriteLine($"Индекс массы тела: {bmi}");
+
